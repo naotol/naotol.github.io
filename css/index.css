@@ -10,7 +10,7 @@
     padding: 0px;
 }
 
-img.logo{
+img.logo {
     max-width: 100%;
     height: auto;
     display: block;
@@ -18,24 +18,24 @@ img.logo{
     text-align: center;
 }
 
-#cast-containers{
+#cast-containers {
     display: flex;
     flex-direction: row;
     padding: 20px;
 }
 
-#char-portrait{
+#char-portrait {
     order: 1;
     flex: 0 0 40%;
     text-align: center;
 }
 
-#char-desc{
+#char-desc {
     order: 2;
     flex: 0 0 60%;
 }
 
-#logo{
+#logo {
     order: 1;
     flex: 1 1 20%;
     text-decoration: none;
@@ -43,27 +43,32 @@ img.logo{
 }
 
 
-#buttons{
+#buttons {
     font-size: 20px;
     padding-top: 50px;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* Internet Explorer 10 and 11 */
+    user-select: none;
 }
 
-a:hover{
+a:hover {
     transition-duration: 0.3s;
-    text-shadow:0px 2px 10px #bce9fd;
+    text-shadow: 0px 2px 10px #bce9fd;
 }
 
-#buttons:hover{
+#buttons:hover {
     transition-duration: 0.3s;
-    text-shadow:0px 2px 10px #bce9fd;
+    text-shadow: 0px 2px 10px #bce9fd;
 }
 
-a.button{
+a.button {
     display: block;
     margin: 20px;
 }
@@ -74,7 +79,7 @@ a.button{
 
 }
 
-#footer-fixed{
+#footer-fixed {
     padding-top: 20px;
     padding-bottom: 50px;
     position: fixed;
@@ -83,16 +88,18 @@ a.button{
     width: 100%;
 }
 
-#footer-links,#header-container {
+#footer-links,
+#header-container {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
 }
 
-div.comment{
+div.comment {
     color: #646464;
 }
-div.image{
+
+div.image {
     margin: 30px;
 }
 
@@ -105,7 +112,7 @@ body {
     font-size: 25px;
 }
 
-div.body{
+div.body {
     text-align: center;
     margin-bottom: 50px;
     margin-left: 20px;
@@ -113,10 +120,11 @@ div.body{
 }
 
 @media only screen and (max-width: 1000px) {
-    body{
+    body {
         font-size: 20px
     }
-    #footer-links{
+
+    #footer-links {
         flex-direction: column;
     }
 }
