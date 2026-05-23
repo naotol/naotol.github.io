@@ -115,6 +115,11 @@ div.body{
     margin-right: 20px;
 }
 
+img.album{
+	width: 100%;
+	min-width: 300px;
+}
+
 @media only screen and (max-width: 1000px) {
     body{
         font-size: 20px
@@ -126,4 +131,12 @@ div.body{
     #mp3playerthingy{
         flex-direction: column;
     }
+	
+	img.album{
+        width: 100%;
+        text-align: center;
+		min-width: 0px;
+	html {
+		zoom: 0.5; /* Scales everything down to 80% */
+  }
 }
